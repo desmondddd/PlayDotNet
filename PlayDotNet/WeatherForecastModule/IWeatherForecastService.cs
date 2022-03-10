@@ -2,5 +2,5 @@ namespace PlayDotNet.WeatherForecastModule;
 
 public interface IWeatherForecastService
 {
-    IEnumerable<WeatherForecast> Get();
+    Task<IEnumerable<WeatherForecast>> Get();
 }

@@ -2,6 +2,17 @@ namespace PlayDotNet.WeatherForecastModule;
 
 public class WeatherForecast
 {
+    public WeatherForecast()
+    {
+    }
+
+    public WeatherForecast(DateTime date, string? summary, int temperatureC)
+    {
+        Date = date;
+        Summary = summary;
+        TemperatureC = temperatureC;
+    }
+
     public DateTime Date { get; set; }
 
     public int TemperatureC { get; set; }

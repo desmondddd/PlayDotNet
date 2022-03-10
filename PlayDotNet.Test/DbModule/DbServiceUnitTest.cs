@@ -37,12 +37,12 @@ public class DbServiceUnitTest
     [TestMethod]
     public async Task GetFromDbShouldWorkWhenNo()
     {
-        // Given
+        // Arrange
 
-        // When
+        // Act
         var actual = await _dbService.GetFromDb(false);
 
-        // Then
+        // Assert
         Assert.AreEqual(null, actual);
         Repository.Verify(it => it.TouchDb(), Times.Never);
     }

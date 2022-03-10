@@ -1,4 +1,4 @@
-namespace PlayDotNet;
+namespace PlayDotNet.WeatherForecastModule;
 
 public class WeatherForecast
 {

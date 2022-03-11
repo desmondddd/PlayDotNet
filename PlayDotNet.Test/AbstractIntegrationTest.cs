@@ -5,11 +5,11 @@ namespace PlayDotNet.Test;
 
 public abstract class AbstractIntegrationTest
 {
-    protected readonly HttpClient client;
+    protected readonly HttpClient Client;
 
     protected AbstractIntegrationTest()
     {
         var webapp = new WebApplicationFactory<Program>();
-        this.client = webapp.CreateDefaultClient();
+        Client = webapp.CreateDefaultClient();
     }
 }

@@ -13,7 +13,7 @@ public class WeatherForecastControllerIntegrationTest : AbstractIntegrationTest
     [TestMethod]
     public async Task WeatherForecastShouldWork()
     {
-        var response = await client.GetAsync("/weather-forecast");
+        var response = await Client.GetAsync("/weather-forecast");
         var actual = await response.Content.ReadFromJsonAsync<IEnumerable<WeatherForecast>>();
 
         Assert.AreEqual(5, actual?.ToList().Count);
